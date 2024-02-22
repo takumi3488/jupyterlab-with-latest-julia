@@ -1,4 +1,5 @@
 FROM jupyter/minimal-notebook
+USER root
 
 RUN curl -fsSL https://install.julialang.org | sh -s -- --yes && \
     ~/.juliaup/bin/juliaup update && \
