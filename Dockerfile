@@ -15,4 +15,4 @@ RUN curl -fsSL https://install.julialang.org | sh -s -- --yes && \
 # Make work directory
 RUN mkdir -p /work
 
-CMD jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token='' --no-browser --notebook-dir="/work"
+CMD jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token="$LAB_APP_TOKEN" --no-browser --notebook-dir="/work"
