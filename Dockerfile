@@ -1,5 +1,8 @@
 FROM python:3.12.2-bookworm
 
+# Set environment variables
+ENV TZ Asia/Tokyo
+
 # Install JuptyerLab
 RUN pip install jupyterlab
 
