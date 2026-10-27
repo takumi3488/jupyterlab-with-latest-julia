@@ -1,4 +1,4 @@
-FROM python:3.15.1-bookworm
+FROM python:3.15.2-bookworm
 
 # Set environment variables
 ENV TZ Asia/Tokyo
